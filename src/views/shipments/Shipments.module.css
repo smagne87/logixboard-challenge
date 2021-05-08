@@ -1,0 +1,7 @@
+td {
+  @apply border border-black p-2;
+}
+
+thead td {
+  @apply text-center font-bold text-xl;
+}

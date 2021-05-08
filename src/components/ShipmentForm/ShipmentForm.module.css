@@ -1,0 +1,16 @@
+form {
+  @apply flex flex-wrap p-3 w-1/2 justify-between;
+}
+
+input {
+  @apply border border-gray-300 p-2 outline-none w-40 mb-2;
+}
+
+select {
+  @apply border border-gray-300 p-2 outline-none w-40 mb-2;
+}
+
+input.error,
+select.error {
+  @apply border-red-700;
+}

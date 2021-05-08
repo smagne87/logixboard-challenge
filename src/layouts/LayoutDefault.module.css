@@ -1,0 +1,13 @@
+:root {
+  --headerHeight: 50px;
+}
+
+.header {
+  @apply flex p-4 bg-gray-500 text-white;
+  height: var(--headerHeight);
+}
+
+.main {
+  @apply p-4;
+  height: calc(100% - var(--headerHeight));
+}

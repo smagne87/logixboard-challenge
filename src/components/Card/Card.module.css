@@ -1,0 +1,5 @@
+.CardContainer {
+  @apply w-80 bg-red-300 border-red-500 
+  rounded-sm mt-2 p-3 text-gray-500 mr-2 
+  cursor-pointer hover:bg-red-500 hover:border-red-900 hover:text-white;
+}
