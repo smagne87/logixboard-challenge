@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
+
+import CalendarInput from 'components/CalendarInput/CalendarInput';
 import './ShipmentForm.module.css';
 import styles from './ShipmentForm.module.css';
 
@@ -104,15 +106,15 @@ export default function ShipmentForm(props: IShipmentFormProps): JSX.Element {
         <option value="Rail">Rail</option>
         <option value="Sea">Sea</option>
       </select>
-      <input
+      <CalendarInput
         id="shipmentDepartureInput"
-        placeholder="01/01/2021"
         className={clsx({ [styles.error]: errors.shipmentDepartureInput })}
+        closeOnChange
       />
-      <input
+      <CalendarInput
         id="shipmentArrivalInput"
-        placeholder="01/01/2021"
-        className={clsx({ [styles.error]: errors.shipmentArrivalInput })}
+        className={clsx({ [styles.error]: errors.shipmentDepartureInput })}
+        closeOnChange
       />
       <select
         id="shipmentStatusSelect"
